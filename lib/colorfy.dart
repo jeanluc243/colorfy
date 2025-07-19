@@ -37,6 +37,10 @@ class ColorString {
     final allStyles = _styles.join('');
     return '$allStyles$_text$_reset';
   }
+
+  ColorString operator +(Object other) {
+    return ColorString(this.toString() + other.toString());
+  }
 }
 
 ColorString color(String text) => ColorString(text);/// Support for doing something awesome.
