@@ -1,39 +1,32 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Colorfy
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Colorfy is a Dart package for styling terminal strings with colors and effects, making your CLI output more readable and visually appealing.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- Apply foreground and background colors to text
+- Add styles like bold, underline, and more
+- Easy-to-use API for chaining styles
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+import 'package:colorfy/colorfy.dart';
+
+void main() {
+  print(Colorfy('Hello, World!').red().bold());
+}
 ```
 
-## Additional information
+## Installation
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Add to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  colorfy: ^1.0.0
+```
+
+## License
+
+MIT
